@@ -3,14 +3,14 @@ import { SIZES, FONTS, COLORS, assets, SHADOWS } from '../constants'
 import React from "react";
 
 
-export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
+export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize, color }) => {
     return (
         <View>
             <Text
                 style={{
                     fontFamily: FONTS.semiBold,
                     fontSize: titleSize,
-                    color: COLORS.white,
+                    color: COLORS.primary,
                 }}
             >
                 {title}
@@ -19,7 +19,7 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
                 style={{
                     fontFamily: FONTS.regular,
                     fontSize: subTitleSize,
-                    color: COLORS.white,
+                    color: COLORS.primary,
                 }}
             >
                 by {subTitle}
